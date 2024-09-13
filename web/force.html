@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Force-Directed Layout</title>
+		<script type="text/javascript" src="d3.v2.js"></script>
+		<script type="text/javascript" src="spider.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			circle.node {
+				stroke: #fff;
+				stroke-width: 1.5px;
+			}
+
+			line.link {
+				stroke: #999;
+				stroke-opacity: 0.6;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			document.write('<p>Starting url: ' + spiderJson.nodes[0].url + '</p>');
+		</script>
+		<div id="chart" class="border"></div>
+		<script type="text/javascript" src="force.js"></script>
+		<p class="font-mono">
+			If you don't see a chart above, check the JavaScript console. You may need
+			to use a different browser.
+		</p>
+	</body>
+</html>
